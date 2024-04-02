@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <style>
+    body {
+      text-align: center;
+      font-family: "Noto Kufi Arabic";
+      
+    }
+    #date-hijire {
+      font-size: 48px;  /* Set a larger font size */
+      font-weight: bold;  /* Make the date bold */
+    }
+      
+  </style>
+</head>
+<body>
+   <p id="date-hijire"></p>
+  <script>
+   // Obtenir la date hijire
+  const dateHijire = new Date().toLocaleDateString("ar-DZ-u-ca-islamic", {
+   year: "numeric",
+   month: "long",
+   day: "numeric",
+   weekday: "long"
+  });
+
+  // Formater la date hijire
+  const formattedDate = dateHijire.replace(/،/g, " ").replace(/\u066c/g, "\u0660");
+
+  // Afficher la date hijire
+document.getElementById("date-hijire").innerHTML = formattedDate ;
+  </script>
+ <!-- Ajoutez ici un élément audio pour la notification sonore -->
+    <audio id="notificationSound" src="notification_sound.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
