@@ -1,0 +1,54 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+   background-color: black;
+   background-image: url("Image1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#date {
+    font-size: 5em;
+    font-weight:bold;
+    color: #ffff99; /* Couleur june pâle */
+   margin-right: 100px; /* Décalage de 20 pixels vers la droite */
+ margin-bottom: 80px; /* Ajouter une marge en bas pour créer de l'espace entre la date et l'heure */
+
+}
+#dateHijire {
+    font-size: 5em;
+    font-weight:bold;
+    color: #ffff99; /* Couleur june pâle */
+ margin-bottom: 60px; /* Ajouter une marge en bas pour créer de l'espace entre la date et l'heure */
+}
+
+#heure {
+    font-size: 3em;
+    color: white;
+    font-family: Arial, sans-serif; /* Utiliser la police "Arial" pour l'heure */
+     
+}
+
+#heure-minute {
+    font-size: 5em;
+    color: white;
+
+font-weight:bold;
+}
+
+#seconde {
+    font-size: 3em;
+    color: white;
+
+  margin-left: 0.5em; /* Ajout d'un espace entre les secondes et les minutes */
+}
